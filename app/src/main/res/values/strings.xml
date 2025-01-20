@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bank Balance Check App</string>
+    <string name="this_is_logo">this is logo</string>
+    <string name="sbi_services">SBI Services</string>
+    <string name="account_details">Account Details</string>
+</resources>
