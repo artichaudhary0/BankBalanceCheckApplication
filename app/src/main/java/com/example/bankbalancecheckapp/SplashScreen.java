@@ -20,7 +20,6 @@ public class SplashScreen extends AppCompatActivity {
 
 
         new Handler().postDelayed(()->{
-
             Intent intent = new Intent(this, HomeScreen.class);
             startActivity(intent);
             finish();

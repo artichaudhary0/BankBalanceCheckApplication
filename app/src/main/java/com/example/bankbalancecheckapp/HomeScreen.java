@@ -22,6 +22,5 @@ public class HomeScreen extends AppCompatActivity {
         findViewById(R.id.btnTransactionHistory).setOnClickListener(v-> startActivity(new Intent(this, TransactionHistory.class)));
         findViewById(R.id.btnLoanServices).setOnClickListener(v-> startActivity(new Intent(this, LoanServices.class)));
         findViewById(R.id.btnSetting).setOnClickListener(v-> startActivity(new Intent(this, Settings.class)));
-
     }
 }

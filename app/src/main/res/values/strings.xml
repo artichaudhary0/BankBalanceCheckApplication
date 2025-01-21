@@ -3,4 +3,7 @@
     <string name="this_is_logo">this is logo</string>
     <string name="sbi_services">SBI Services</string>
     <string name="account_details">Account Details</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="send_money">Send Money</string>
 </resources>
