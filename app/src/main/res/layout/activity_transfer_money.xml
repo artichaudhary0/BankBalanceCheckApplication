@@ -21,7 +21,7 @@
         android:id="@+id/etRecipient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_amount"
+        android:hint="Enter Account number"
         android:inputType="number"
         android:backgroundTint="@color/black"
         android:textColor="@color/black"
