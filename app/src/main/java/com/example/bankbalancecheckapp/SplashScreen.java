@@ -18,9 +18,12 @@ public class SplashScreen extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen);
 
+        UserData userData = new UserData("Arti Chuadhary","67234523674",345345.54);
+
 
         new Handler().postDelayed(()->{
             Intent intent = new Intent(this, HomeScreen.class);
+            intent.putExtra("user",userData);
             startActivity(intent);
             finish();
         },3000);

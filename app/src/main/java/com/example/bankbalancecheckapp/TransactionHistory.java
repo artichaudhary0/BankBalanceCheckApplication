@@ -14,29 +14,18 @@ import java.util.ArrayList;
 
 public class TransactionHistory extends AppCompatActivity {
 
-    private ListView transactionListView;
+    private UserData userData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_transaction_history);
 
-        transactionListView = findViewById(R.id.transactionHistory);
+        userData = (UserData) getIntent().getSerializableExtra("user");
 
-        ArrayList<String> transaction = new ArrayList<>();
+        ListView transactionListView = findViewById(R.id.transactionHistory);
 
-        transaction.add("₹500 sent to Account 12345 1234");
-        transaction.add("₹1500 received from Account 12345 1234");
-        transaction.add("₹500 sent to Account 12345 1234");
-        transaction.add("₹1500 received from Account 12345 1234");
-        transaction.add("₹500 sent to Account 12345 1234");
-        transaction.add("₹1500 received from Account 12345 1234");
-        transaction.add("₹500 sent to Account 12345 1234");
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,transaction);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,userData.getTransaction());
         transactionListView.setAdapter(adapter);
-
-
-
     }
 }
