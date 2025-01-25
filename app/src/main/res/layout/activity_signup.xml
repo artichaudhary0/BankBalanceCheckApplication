@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name "
+        android:id="@+id/etUserName"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Account Number "
+        android:id="@+id/etAccountNumber"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:id="@+id/etPhoneNumber"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password "
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Confirm password "
+        android:id="@+id/etConfirmPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAlreadyHaveAccount"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

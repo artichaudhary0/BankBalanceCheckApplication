@@ -47,10 +47,4 @@ public class UserData implements Serializable {
     {
         transactions.add(transaction);
     }
-
-
-
-
-
-
 }
