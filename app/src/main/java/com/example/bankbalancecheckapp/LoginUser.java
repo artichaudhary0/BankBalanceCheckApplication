@@ -41,7 +41,7 @@ public class LoginUser extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences("BankAppPrefs",MODE_PRIVATE);
         String storedAccountNumber = prefs.getString("accountNumber",null);
-        String storedpassword = prefs.getString("password",null);
+        String storedPassword = prefs.getString("password",null);
 
         if(TextUtils.isEmpty(enteredAccountNumber) || TextUtils.isEmpty(enteredPassword)){
             Toast.makeText(this,"Please fill all details",Toast.LENGTH_SHORT).show();
@@ -50,7 +50,7 @@ public class LoginUser extends AppCompatActivity {
 
 
 
-        if(enteredAccountNumber.equals(storedAccountNumber) && enteredPassword.equals(storedpassword))
+        if(enteredAccountNumber.equals(storedAccountNumber) && enteredPassword.equals(storedPassword))
         {
             prefs.edit().putBoolean("isLoggedIn",true).apply();
 
@@ -66,7 +66,5 @@ public class LoginUser extends AppCompatActivity {
         }else{
             Toast.makeText(this,"does not match",Toast.LENGTH_SHORT).show();
         }
-
-
     }
 }

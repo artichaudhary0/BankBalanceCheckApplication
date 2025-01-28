@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/transactionHistory"
         android:divider="@color/black"
-        android:dividerHeight="1dp"/>
+        android:dividerHeight="1dp"
+        />
 
 
 

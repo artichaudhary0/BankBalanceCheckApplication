@@ -30,7 +30,6 @@ public class Signup extends AppCompatActivity {
 
         findViewById(R.id.btnSignUp).setOnClickListener(v->signUpUser());
 
-
         findViewById(R.id.etAlreadyHaveAccount).setOnClickListener(v->{
             startActivity(new Intent(this, LoginUser.class));
             finish();
@@ -45,26 +44,16 @@ public class Signup extends AppCompatActivity {
         String confirmPassword = etConfirmPassword.getText().toString().trim();
         String phoneNumber = etPhoneNumber.getText().toString().trim();
 
-
         if(TextUtils.isEmpty(name) || TextUtils.isEmpty(accountNumber)||TextUtils.isEmpty(password)||TextUtils.isEmpty(confirmPassword)||TextUtils.isEmpty(phoneNumber)){
             Toast.makeText(this,"Please fill all details",Toast.LENGTH_SHORT).show();
             return ;
         }
 
-        getSharedPreferences("BankAppPrefs",MODE_PRIVATE).edit().putString("name",name).putString("accountNumber",accountNumber).putString("phoneNumber",phoneNumber).putString("password",password).putBoolean("isLoggedIn",false).apply();
+        getSharedPreferences("BankAppPrefs",MODE_PRIVATE).edit().putString("name",name).putString("accountNumber",accountNumber).putString("phoneNumber",phoneNumber).putString("password",password).putBoolean("isLoggedIn",true).apply();
         Toast.makeText(this,"SignUp Successfully",Toast.LENGTH_SHORT).show();
 
         startActivity(new Intent(Signup.this, LoginUser.class));
         finish();
-
-
     }
-
-
-
-
-
-
-
 
 }
